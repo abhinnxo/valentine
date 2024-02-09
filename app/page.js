@@ -1,11 +1,8 @@
-import Image from "next/image";
+"use client";
+
 import { useEffect, useState } from "react";
 import JSConfetti from "js-confetti";
-
-export const metadata = {
-  title: "Will you be my Valentine?",
-  description: "Open Link to tell me...",
-};
+import Head from "next/head";
 
 export default function Home() {
   const [click, setClick] = useState(0);
@@ -106,5 +103,14 @@ export default function Home() {
       </main>
     );
   };
-  return yesClicked ? <YesPage /> : <AskoutPage />;
+  return (
+    <>
+      <Head>
+        <title>Will you be my Valentine?</title>
+        <meta name="description" content="Click on the LINK!!!" />
+        <meta name="keywords" content="valentine, abhinn, krishn" />
+      </Head>
+      {yesClicked ? <YesPage /> : <AskoutPage />}
+    </>
+  );
 }
