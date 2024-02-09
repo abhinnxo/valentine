@@ -24,7 +24,7 @@ export default function Home() {
 
   const AskoutPage = () => {
     return (
-      <main className="container flex justify-center items-center h-[100vh]">
+      <main className="container mx-auto flex justify-center items-center h-[100vh]">
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl text-center">
             Will you go out on a Date with me?
@@ -85,7 +85,7 @@ export default function Home() {
     }, []);
 
     return (
-      <main className="container flex flex-col justify-center h-[100vh] items-center">
+      <main className="container mx-auto flex flex-col justify-center h-[100vh] items-center">
         <h1 className="text-4xl text-center">
           Thanks for being my valentine&nbsp;💖
         </h1>
