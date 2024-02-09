@@ -4,6 +4,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import JSConfetti from "js-confetti";
 
+export const metadata = {
+  title: "Will you be my Valentine?",
+  description: "Open Link to tell me...",
+};
+
 export default function Home() {
   const [click, setClick] = useState(0);
   const [yesClicked, setyesClicked] = useState(false);
