@@ -100,7 +100,6 @@ export default function Home() {
         >
           {shareButtonText}
         </button>
-        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
       </main>
     );
   };
